@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.arikahnaf</groupId>
+  <artifactId>digital-wallet-system</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>Digital Wallet System</name>
+  <description>A GUI-based Java program that allows users to hold a digital balance, send money to each other, and manage their personal finances.</description>
+  
+  <properties>
+    <maven.compiler.source>24</maven.compiler.source>
+    <maven.compiler.target>24</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <source>24</source>
+          <target>24</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

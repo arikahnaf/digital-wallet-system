@@ -61,5 +61,23 @@ public class AuthService {
         }
     }
 
-    // Implement login function: Authenticates against stored data.
+    /**
+     * Authenticates a user against stored data.
+     * 
+     * @param email    the email address entered by the user
+     * @param password the password entered by the user
+     * @return the verified User instance, or null if verification fails
+     */
+    public User login(String email, String password) {
+        User user = userDatabase.get(email);
+        
+        // Protect against null pointer exceptions if the email doesn't exist
+        if (user != null && user.getPassword().equals(password)) {
+            System.out.println("Authentication successful for " + email);
+            return user;
+        }
+        
+        System.out.println("Authentication Failed: Invalid credentials.");
+        return null;
+    }
 }
